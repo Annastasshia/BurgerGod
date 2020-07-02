@@ -1,0 +1,51 @@
+
+<div class="row" style="padding: 20px;">
+<div class="col-sm-4">
+
+<h2 style="text-align: center; padding:40px">Burgers that are not devoured!</h2>
+<ul>
+  {{#each burgers}}
+    {{#unless devoured}}
+      {{> burgers/burger-block devoured=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+      </div>
+      <div class="col-sm-4">
+      <img src="https://cdn.dribbble.com/users/2172479/screenshots/5737411/fortnite-01_1x.jpg">
+      </div>
+<div class="col-sm-4">
+      
+<h2 style="text-align: center; padding:40px">Burgers have been ReGuRgItAtEd:</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if devoured}}
+      {{> burgers/burger-block devoured=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+</div>
+</div>
+<div class="card" style="position: sticky; text-align:center">
+     <br>
+<h2>Add a burger for BURGER GOD!</h2>
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="ca" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="devour it">Devour it?</label><br>
+    <input type="radio" name="devoured" value="1" checked> Devour it!<br>
+    <input type="radio" name="devoured" value="0"> Throw it up!
+  </div>
+
+  <button type="submit">Add burger</button>
+  <br>
+  <br>
+</form>
+</div>
+</div>
