@@ -6,17 +6,19 @@
   </a>
 </p>
 
-> A node CLI program to create auto generate your README file
+> A Express, Handlebars, and MySql application demonstrating the use of MySql in a interactive online enviroment.
 
 ## User Story 1
 
-* As a developer, I want to be able to create a readme document using my terminal. I want to be able to list all important information in a readable and clear format.
+* As a user, I want to create and save burgers to send to potentially be eaten or thrown away by the burgergod. I want to be able to list all burgers the Burger God has consumed.
 
 ## Technologies 
  
+- Mysql
 - Handlebars 
 - Node
 - Express
+- Heroku
 
 
 ### 🏠 [Homepage]
@@ -25,8 +27,8 @@
 
 👤 **Annastasshia Ames
 
-* Website:  https://annastasshia.github.io/Readme-Generator/
-* Repository: https://github.com/Annastasshia/Readme-Generator
+* Website:  https://annastasshia.github.io/BurgerGod/
+* Repository: https://github.com/Annastasshia/BurgerGod
 * Github: [@Annastasshia](https://github.com/Annastasshia)
 
 ## Acknowledgements
