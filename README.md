@@ -14,6 +14,7 @@
 
 ## Technologies 
  
+- Handlebars 
 - Node
 - Express
 
