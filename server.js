@@ -11,6 +11,9 @@ function shouldCompress (req, res) {
     // don't compress responses with this request header
     return false
   }
+  // fallback to standard filter function
+  return compression.filter(req, res)
+}
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
