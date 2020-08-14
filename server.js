@@ -6,6 +6,12 @@ var app = express();
 
 app.use(compression({ filter: shouldCompress }));
 
+function shouldCompress (req, res) {
+  if (req.headers['x-no-compression']) {
+    // don't compress responses with this request header
+    return false
+  }
+
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("public"));
 
